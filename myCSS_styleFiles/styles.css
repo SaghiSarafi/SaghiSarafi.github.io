@@ -1,0 +1,335 @@
+/* ============================
+   General Styling
+============================ */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  /* ============================
+     Navbar
+  ============================ */
+
+  .navbar {
+    background: linear-gradient(to right, #343a40, #495057);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /* ============================
+     Banner Images
+  ============================ */
+  .banner-img,
+  .banner-img2 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+  }
+  
+  .banner-img {
+    width: 78vw;
+    height: 600px;
+  }
+  
+  .banner-img2 {
+    width: 80vw;
+    height: auto;
+  }
+  
+  /* ============================
+     Container & Row Reset
+  ============================ */
+  .container,
+  .row {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    width: 100% !important;
+  }
+  
+  .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  /* ============================
+     Home Section
+  ============================ */
+  #home {
+    position: relative;
+    text-align: center;
+    color: rgb(22, 20, 20);
+    padding-top: 20px;
+  }
+  
+  #home h1 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: lighter;
+  }
+  
+  #home:before {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background: #fdfdfd;
+    z-index: -1;
+  }
+  
+  /* ============================
+     Header Text Blocks
+  ============================ */
+  #header,
+  #header2 {
+    width: 600px;
+    padding-left: 28px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    background: transparent;
+    line-height: 20px;
+  }
+  
+  #header {
+    padding-top: 25px;
+    font-size: 1.6rem;
+  }
+  
+  #header2 {
+    font-size: 1rem;
+  }
+  
+  #header h2,
+  #header2 h3 {
+    font-size: inherit;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* ============================
+     Sidebar Navigation
+  ============================ */
+  #nav {
+    margin-top: 25px;
+    padding-left: 20px;
+    width: 200px;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    background: transparent;
+    font-size: 116%;
+  }
+  
+  #nav a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #nav a:hover {
+    background-color: #ddd;
+  }
+  
+  #nav a.active {
+    background-color: #ffc800;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* ============================
+     Main Content Area
+  ============================ */
+  #content {
+    margin-left: 230px;
+    padding: 20px;
+  }
+  
+  #contentinner {
+    margin-left: 225px;
+    font-size: 136%;
+    height: 1%;
+  }
+  
+  #contentinner h1,
+  #contentinner h2,
+  #contentinner h3,
+  #contentinner h4 {
+    font-weight: bold;
+    font-size: inherit;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #top {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* ============================
+     Section Headings
+  ============================ */
+  #short_bio,
+  #cv {
+    margin-top: 40px;
+  }
+  
+  #short_bio h4,
+  #cv h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #ffc800;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* ============================
+     Footer
+  ============================ */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  
+  /* ============================
+     Carousel
+  ============================ */
+  .carousel-item img,
+  .carousel-inner img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+  }
+  
+  .carousel-indicators {
+    height: 100vh;
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+  }
+  
+  .carousel-caption h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* ============================
+     Social Icons
+  ============================ */
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .social {
+    font-size: 1.6rem;
+    color: #0077b5;
+    transition: color 0.3s ease;
+  }
+  
+  /* ============================
+     Contact Form Box
+  ============================ */
+  .custom-contact-form {
+    background-color: #fdfdfd;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    max-width: 350px;
+    margin-top: 0;
+    margin-right: 70px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .custom-contact-form h5 {
+    font-weight: bold;
+    font-size: inherit;
+    font-family: 'Arial', sans-serif;
+    margin-right: 140px;
+  }
+  
+  .custom-contact-form:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-contact-form input,
+  .custom-contact-form textarea {
+    border-radius: 0.5rem;
+  }
+  
+  /* ============================
+     Responsive Adjustments
+  ============================ */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 2rem;
+    }
+  
+    #home p {
+      font-size: 1.1rem;
+    }
+  
+    #nav {
+      width: 100%;
+      font-size: 1.2rem;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+    }
+  
+    .navbar-collapse {
+      display: block;
+    }
+  }
+  

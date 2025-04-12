@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saghi Sarafi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="myCSS_styleFiles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <H2>Saghi Sarafi</H2>
+    </div>
+    <div id="header2">
+        <H3>Spatial Data Analyst / Urban Designer</H3>
+    </div>
+    <br>
+
+    <div id="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="cv.html">Curriculum Vitae</a>
+        <a href="research.html">Research Interests</a>
+        <a href="personal.html">Personal Interests</a>
+        <a href="webapp.html">Web Map</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="content">
+        <section id="home" class="container mt-5 pt-5 text-center">
+            <img src="images/Iran.JPG" class="banner-img" alt="Saghi Sarafi Banner">
+            <p>Welcome to Saghi's Website. Explore my work, research, and projects in geospatial science and beyond.</p>
+        </section>
+    </div>
+
+    <script>
+        // Get all the navigation links
+        const navLinks = document.querySelectorAll('#nav a');
+
+        // Get the current page's filename
+        const currentPage = window.location.pathname.split("/").pop();
+
+        // Loop through each nav link
+        navLinks.forEach(link => {
+            // Check if the link's href matches the current page
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active'); // Add the active class
+            }
+        });
+    </script>
+</body>
+
+</html>

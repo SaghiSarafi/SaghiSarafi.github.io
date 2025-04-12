@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="myCSS_styleFiles/styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <H2>Saghi Sarafi</H2>
+    </div>
+    <div id="header2">
+        <H3>Spatial Data Analyst / Urban Designer</H3>
+    </div>
+    <br>
+    <br>
+
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="cv.html" class="active">Curriculum Vitae</a>
+        <a href="research.html">Research Interests</a>
+        <a href="personal.html">Personal Interests</a>
+        <a href="webapp.html">Web Map</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="contentinner">
+        <h3>Saghi's Biographical sketches</h3>
+    </div>
+
+    <div id="contentinner">
+        <a href="#short_bio">Brief Bio</a> | <a href="#cv">CV</a>
+        <img src="images/Saghi.JPG" alt="Saghi Sarafi Banner" class="banner-img2">
+        <h4 id="short_bio"> Brief Bio </h4>
+    </div>
+    <div id="content">
+        <p> I am a PhD student in Geography at the
+            <a href="https://www.unm.edu/" target="_blank">University of New Mexico</a>,
+            specializing in spatial analysis, remote sensing, and urban sustainability.
+            My research focuses on leveraging geospatial technologies to analyze urban heat islands,
+            environmental monitoring, and transportation planning.
+        </p>
+        <p>Previously, I worked as a researcher at the
+            <a href="https://www.fh-kaernten.at/en/" target="_blank">Carinthia University of Applied Sciences</a>,
+            where I contributed to building footprint digitization projects in Austria. I also conducted research at
+            the
+            <a href="https://www.unm.edu/" target="_blank">University of New Mexico</a>,
+            utilizing remote sensing technology to analyze urban heat islands across various cities. My professional
+            experience includes serving as a spatial data analyst at
+            <a href="https://www.dynamicgroupco.com/" target="_blank">Dynamic Kariz System Design and Architecture
+                Company</a>
+            in Tehran, Iran, where I was involved in developing national geolocation and navigation systems.
+            Additionally, I worked as an urban development engineer at
+            <a href="https://www.naghshine.com/" target="_blank">Naghshine Mandegar Engineering Office</a>,
+            overseeing construction projects.
+            I have technical expertise in Google Earth Engine, Python, JavaScript, HTML, CSS, PostgreSQL, Node.js, 
+            and Leaflet, along with GIS platforms like ArcGIS and QGIS, and urban design tools such as AutoCAD and CityEngine. 
+            My specialization includes geospatial data processing, remote sensing analysis, and developing web-based mapping applications.
+        </p>
+        <p>I hold an MSc in Spatial Information Management from
+            <a href="https://www.fh-kaernten.at/en/" target="_blank">Carinthia University of Applied Sciences</a>,
+            an MSc in Urban Design from
+            <a href="https://yazd.ac.ir/" target="_blank">Yazd University</a>,
+            and a BSc in Urban Planning from
+            <a href="https://uok.ac.ir/" target="_blank">University of Kurdistan</a>.
+        </p>
+    </div>
+    <div id="contentinner">
+        <h4 id="cv"> CV <a href="#top">[top]</a></h4>
+    </div>
+    <div id="content">
+        <p>
+            👉 Saghi's CV can be found at
+            <a href="Documents/Saghi_CV.pdf" target="_blank">HERE</a>.
+        </p>
+    </div>
+
+    <script>
+        // Get all the navigation links
+        const navLinks = document.querySelectorAll('#nav a');
+
+        // Get the current page's filename
+        const currentPage = window.location.pathname.split("/").pop();
+
+        // Loop through each nav link
+        navLinks.forEach(link => {
+            // Check if the link's href matches the current page
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active'); // Add the active class
+            }
+        });
+    </script>
+</body>
+
+</html>
