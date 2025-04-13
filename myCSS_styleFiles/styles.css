@@ -279,35 +279,6 @@ body {
   }
   
   /* ============================
-     Contact Form Box
-  ============================ */
-  .custom-contact-form {
-    background-color: #fdfdfd;
-    font-size: 1.2rem;
-    border: 1px solid #ddd;
-    max-width: 350px;
-    margin-top: 0;
-    margin-right: 70px;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .custom-contact-form h5 {
-    font-weight: bold;
-    font-size: inherit;
-    font-family: 'Arial', sans-serif;
-    margin-right: 140px;
-  }
-  
-  .custom-contact-form:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .custom-contact-form input,
-  .custom-contact-form textarea {
-    border-radius: 0.5rem;
-  }
-  
-  /* ============================
      Responsive Adjustments
   ============================ */
   @media (max-width: 768px) {
