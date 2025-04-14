@@ -59,6 +59,12 @@ body {
   .banner-img2 {
     width: 80vw;
     height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  
+  .banner-img2:hover {
+    transform: scale(1.2);
   }
   
   /* ============================
