@@ -2,235 +2,235 @@
    General Styling
 ============================ */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f1f1f1;
-    color: #333;
-    margin: 0;
-    padding-left: 10px;
-  }
-  
-  /* ============================
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* ============================
      Navbar
   ============================ */
 
-  .navbar {
-    background: linear-gradient(to right, #343a40, #495057);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-brand {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .navbar-nav .nav-link {
-    color: white !important;
-    font-size: 1.1rem;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #ffcc00 !important;
-  }
-  
-  .navbar-collapse {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  /* ============================
+.navbar {
+  background: linear-gradient(to right, #343a40, #495057);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* ============================
      Banner Images
   ============================ */
-  .banner-img,
-  .banner-img2 {
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: none;
-    position: relative;
-  }
-  
-  .banner-img {
-    width: 78vw;
-    height: 600px;
-  }
-  
-  .banner-img2:hover {
-    width: 80vw;
-    height: auto;
-    transform: scale(1.2);
-  }
-  
-  /* ============================
+.banner-img,
+.banner-img2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.banner-img {
+  width: 78vw;
+  height: 600px;
+}
+
+.banner-img2:hover {
+  width: 80vw;
+  height: auto;
+  transform: scale(1.2);
+}
+
+/* ============================
      Container & Row Reset
   ============================ */
-  .container,
-  .row {
-    margin: 0 !important;
-    padding-top: 0 !important;
-    width: 100% !important;
-  }
-  
-  .container {
-    padding: 0 !important;
-    max-width: 100% !important;
-  }
-  
-  /* ============================
+.container,
+.row {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  width: 100% !important;
+}
+
+.container {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+/* ============================
      Home Section
   ============================ */
-  #home {
-    position: relative;
-    text-align: center;
-    color: rgb(22, 20, 20);
-    padding-top: 20px;
-  }
-  
-  #home h1 {
-    font-size: 2.5rem;
-    font-weight: lighter;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  }
-  
-  #home p {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    font-weight: lighter;
-  }
-  
-  #home:before {
-    content: '';
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 120%;
-    height: 100%;
-    background: #fdfdfd;
-    z-index: -1;
-  }
-  
-  /* ============================
+#home {
+  position: relative;
+  text-align: center;
+  color: rgb(22, 20, 20);
+  padding-top: 20px;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: lighter;
+}
+
+#home:before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: #fdfdfd;
+  z-index: -1;
+}
+
+/* ============================
      Header Text Blocks
   ============================ */
-  #header,
-  #header2 {
-    width: 600px;
-    padding-left: 28px;
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    background: transparent;
-    line-height: 20px;
-  }
-  
-  #header {
-    padding-top: 25px;
-    font-size: 1.6rem;
-  }
-  
-  #header2 {
-    font-size: 1rem;
-  }
-  
-  #header h2,
-  #header2 h3 {
-    font-size: inherit;
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* ============================
+#header,
+#header2 {
+  width: 600px;
+  padding-left: 28px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  background: transparent;
+  line-height: 20px;
+}
+
+#header {
+  padding-top: 25px;
+  font-size: 1.6rem;
+}
+
+#header2 {
+  font-size: 1rem;
+}
+
+#header h2,
+#header2 h3 {
+  font-size: inherit;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ============================
      Sidebar Navigation
   ============================ */
-  #nav {
-    margin-top: 25px;
-    padding-left: 20px;
-    width: 200px;
-    float: left;
-    font-weight: bold;
-    text-align: left;
-    background: transparent;
-    font-size: 116%;
-  }
-  
-  #nav a {
-    display: block;
-    padding: 10px;
-    color: black;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  #nav a:hover {
-    background-color: #ddd;
-  }
-  
-  #nav a.active {
-    background-color: #ffc800;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* ============================
+#nav {
+  margin-top: 25px;
+  padding-left: 20px;
+  width: 200px;
+  float: left;
+  font-weight: bold;
+  text-align: left;
+  background: transparent;
+  font-size: 116%;
+}
+
+#nav a {
+  display: block;
+  padding: 10px;
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#nav a:hover {
+  background-color: #ddd;
+}
+
+#nav a.active {
+  background-color: #ffc800;
+  color: white;
+  font-weight: bold;
+}
+
+/* ============================
      Main Content Area
   ============================ */
-  #content {
-    margin-left: 230px;
-    padding: 20px;
-  }
-  
-  #contentinner {
-    margin-left: 225px;
-    font-size: 136%;
-    height: 1%;
-  }
-  
-  #contentinner h1,
-  #contentinner h2,
-  #contentinner h3,
-  #contentinner h4 {
-    font-weight: bold;
-    font-size: inherit;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  #top {
-    font-weight: lighter;
-    font-size: 1.2rem;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* ============================
+#content {
+  margin-left: 230px;
+  padding: 20px;
+}
+
+#contentinner {
+  margin-left: 225px;
+  font-size: 136%;
+  height: 1%;
+}
+
+#contentinner h1,
+#contentinner h2,
+#contentinner h3,
+#contentinner h4 {
+  font-weight: bold;
+  font-size: inherit;
+  font-family: 'Arial', sans-serif;
+}
+
+#top {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ============================
      Section Headings
   ============================ */
-  #short_bio,
-  #cv {
-    margin-top: 40px;
-  }
-  
-  #short_bio h4,
-  #cv h4 {
-    font-weight: bold;
-    font-size: 1.3rem;
-    border-bottom: 2px solid #ffc800;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-  }
-  
-  /* ============================
+#short_bio,
+#cv {
+  margin-top: 40px;
+}
+
+#short_bio h4,
+#cv h4 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #ffc800;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* ============================
      Footer
   ============================ */
-  footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 1rem;
-  }
-  
-  /* ============================
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+/* ============================
      Carousel
   ============================ */
 .carousel {
@@ -254,7 +254,6 @@ body {
   transform: scale(1.15);
 }
 
-/* Caption Styling */
 .carousel-caption {
   position: absolute;
   bottom: 12%;
@@ -276,16 +275,14 @@ body {
   font-size: 1.2rem;
 }
 
-/* Carousel Controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
-/* Indicators */
 .carousel-indicators [data-bs-target] {
   background-color: #ffc800;
   width: 12px;
@@ -298,8 +295,8 @@ body {
   opacity: 1;
 }
 
-/* Responsive Tweaks */
 @media (max-width: 768px) {
+
   .carousel-item img,
   .carousel-inner img {
     width: 85%;
@@ -314,46 +311,111 @@ body {
   }
 }
 
-  
-  /* ============================
+
+/* ============================
      Social Icons
   ============================ */
-  .social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-  }
-  
-  .social {
-    font-size: 1.6rem;
-    color: #0077b5;
-    transition: color 0.3s ease;
-  }
-  
-  /* ============================
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.social {
+  font-size: 1.6rem;
+  color: #0077b5;
+  transition: color 0.3s ease;
+}
+
+/* ============================
      Responsive Adjustments
   ============================ */
-  @media (max-width: 768px) {
-    #home h1 {
-      font-size: 2rem;
-    }
-  
-    #home p {
-      font-size: 1.1rem;
-    }
-  
-    #nav {
-      width: 100%;
-      font-size: 1.2rem;
-    }
-  
-    .navbar-nav .nav-link {
-      font-size: 1rem;
-    }
-  
-    .navbar-collapse {
-      display: block;
-    }
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
   }
-  
+
+  #home p {
+    font-size: 1.1rem;
+  }
+
+  #nav {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  .navbar-collapse {
+    display: block;
+  }
+}
+
+/* ============================
+   Research Grid Section
+============================ */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.research-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.research-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.research-card i {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.research-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.research-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Optional: Fade-in Animation */
+.research-card {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.research-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.research-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.research-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
