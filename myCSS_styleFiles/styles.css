@@ -233,35 +233,87 @@ body {
   /* ============================
      Carousel
   ============================ */
+.carousel {
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.carousel-item img,
+.carousel-inner img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  transition: transform 0.5s ease, width 0.5s ease;
+  margin: 0 auto;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.15);
+}
+
+/* Caption Styling */
+.carousel-caption {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  right: 5%;
+  background: rgba(0, 0, 0, 0.26);
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* Indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: #ffc800;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
   .carousel-item img,
   .carousel-inner img {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden;
+    width: 85%;
   }
-  
-  .carousel-indicators {
-    height: 100vh;
-    object-fit: contain;
-    object-position: center;
-    overflow: hidden;
-  }
-  
+
   .carousel-caption h3 {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 8px;
-    color: #fff;
+    font-size: 1.4rem;
   }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-size: 100% 100%;
-    width: 40px;
-    height: 40px;
+
+  .carousel-caption p {
+    font-size: 1rem;
   }
+}
+
   
   /* ============================
      Social Icons
