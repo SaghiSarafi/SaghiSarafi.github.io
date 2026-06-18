@@ -46,17 +46,17 @@ body {
 .banner-img {
   width: 78vw;
   height: 600px;
+  object-fit: cover;        
+  display: block;
+  margin: 0 auto;
 }
 
 .banner-img2 {
   width: 78vw;
-  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 20px auto;
   border: none;
-  position: relative;
-}
 
 /* ============================
      Container & Row Reset
