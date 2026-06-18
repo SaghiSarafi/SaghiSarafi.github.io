@@ -40,26 +40,27 @@ body {
 }
 
 /* ============================
-     Banner Images
-  ============================ */
-.banner-img,
-.banner-img2 {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  position: relative;
-}
+   Banner Images
+============================ */
 
 .banner-img {
   width: 78vw;
   height: 600px;
 }
 
+.banner-img2 {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+/* Optional subtle hover effect */
 .banner-img2:hover {
-  width: 80vw;
-  height: auto;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 /* ============================
