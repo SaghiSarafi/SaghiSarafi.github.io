@@ -49,12 +49,16 @@ body {
 }
 
 .banner-img2 {
-  width: 250px;
+  width: 300px;
   height: auto;
   display: block;
   margin: 20px auto;
   border: none;
   position: static;
+}
+
+.banner-img2:hover {
+  transform: none;
 }
 
 /* ============================
