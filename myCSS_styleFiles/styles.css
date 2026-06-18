@@ -49,16 +49,10 @@ body {
 }
 
 .banner-img2 {
-  width: 300px;
+  width: 350px;
   height: auto;
-  display: block;
-  margin: 20px auto;
-  border: none;
-  position: static;
-}
-
-.banner-img2:hover {
-  transform: none;
+  float: right;
+  margin: 0 0 20px 30px;
 }
 
 /* ============================
