@@ -49,11 +49,10 @@ body {
 }
 
 .banner-img2 {
-  width: 900px;
-  max-width: 100%;
+  width: 350px;
   height: auto;
-  display: block;
-  margin: 20px auto;
+  float: right;
+  margin: 0 0 20px 30px;
 }
 
 /* ============================
