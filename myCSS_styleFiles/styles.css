@@ -49,10 +49,13 @@ body {
 }
 
 .banner-img2 {
-  width: 350px;
+  width: 78vw;
+  max-width: 100%;
   height: auto;
-  float: right;
-  margin: 0 0 20px 30px;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: none;
+  position: relative;
 }
 
 /* ============================
