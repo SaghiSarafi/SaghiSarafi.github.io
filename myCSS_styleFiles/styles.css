@@ -49,18 +49,12 @@ body {
 }
 
 .banner-img2 {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
+  width: 250px;
+  height: auto;
   display: block;
   margin: 20px auto;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-}
-
-/* Optional subtle hover effect */
-.banner-img2:hover {
-  transform: scale(1.05);
+  border: none;
+  position: static;
 }
 
 /* ============================
