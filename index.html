@@ -1,57 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saghi Sarafi</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="myCSS_styleFiles/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saghi Sarafi — Spatial Data Analyst &amp; Urban Designer</title>
+<meta name="description" content="Saghi Sarafi is a spatial data analyst and urban designer working across remote sensing, geospatial analysis, and urban sustainability. PhD student in Geography, University of New Mexico.">
+<meta property="og:title" content="Saghi Sarafi — Spatial Data Analyst & Urban Designer">
+<meta property="og:description" content="Geospatial research and urban design work at the intersection of remote sensing, climate, and cities.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/Iran.jpeg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5b62'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <div id="header">
-        <H2>Saghi Sarafi</H2>
-    </div>
-    <div id="header2">
-        <H3>Spatial Data Analyst / Urban Designer</H3>
-    </div>
-    <br>
 
-    <div id="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="cv.html">Curriculum Vitae</a>
-        <a href="research.html">Research Interests</a>
-        <a href="personal.html">Personal Interests</a>
-        <a href="webapp.html">Web Map</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div id="content">
-        <section id="home" class="container mt-5 pt-5 text-center">
-            <img src="images/Iran.jpeg" class="banner-img" alt="Saghi Sarafi Banner">
-            <p>Welcome to Saghi's Website. Explore my work, research, and projects in geospatial science and beyond.</p>
-        </section>
-    </div>
-    
-    <!-- Bootstrap 5 JavaScript Bundle -->
-    <script src="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Get all the navigation links
-        const navLinks = document.querySelectorAll('#nav a');
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Saghi Sarafi</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="webapp.html">Projects</a></li>
+      <li><a href="personal.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-        // Get the current page's filename
-        const currentPage = window.location.pathname.split("/").pop();
+<section class="hero" style="--hero-image: url('images/Iran.jpeg');">
+  <div class="container hero-inner">
+    <div class="role">Spatial Data Analyst · Urban Designer</div>
+    <h1>Saghi Sarafi</h1>
+    <p class="lede">PhD student in Geography at the University of New Mexico, working at the intersection of remote sensing, spatial analysis, and urban sustainability — turning geospatial data into insight for more resilient cities.</p>
+    <div class="hero-actions">
+      <a href="cv.html" class="btn btn-primary">View my CV</a>
+      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+</section>
 
-        // Loop through each nav link
-        navLinks.forEach(link => {
-            // Check if the link's href matches the current page
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active'); // Add the active class
-            }
-        });
-    </script>
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">About</span>
+      <h2>Mapping cities, climate, and change</h2>
+      <p class="lede mt-0">
+        I'm a spatial data analyst and urban designer with a background spanning
+        urban planning, urban design, and spatial information management across
+        Iran, Austria, and the United States. My current research focuses on
+        urban heat islands and remote sensing at the University of New Mexico,
+        building on earlier work digitizing building footprints in Austria and
+        leading spatial analysis and urban development projects in Tehran, Iran.
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="3"/><path d="M12 21c-4.5-4.2-7-7.6-7-11a7 7 0 0 1 14 0c0 3.4-2.5 6.8-7 11Z"/></svg>
+        <h3>Geospatial Analysis</h3>
+        <p>Spatial patterns in environmental and urban data using GIS techniques and spatial statistics.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20 12 4l8 16"/><path d="M8 20l4-8 4 8"/></svg>
+        <h3>Remote Sensing</h3>
+        <p>Satellite imagery for monitoring land cover change, urban expansion, and environmental indicators.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg>
+        <h3>Urban Sustainability</h3>
+        <p>Resilient urban spaces through integrated planning, green infrastructure, and equity mapping.</p>
+      </div>
+    </div>
+    <p class="text-center" style="margin-top:1.75rem;"><a href="research.html" class="btn btn-outline">See all research interests →</a></p>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="container">
+    <span class="eyebrow">Featured project</span>
+    <div class="feature-card" style="margin-top: 0.75rem;">
+      <div class="feature-copy">
+        <h2>NYC Tree Census Map</h2>
+        <p>An interactive web app built with Leaflet.js and D3.js that visualizes New York City's Tree Census data — exploring the distribution, species, and health of trees across the five boroughs to support environmental research and urban planning.</p>
+        <div class="hero-actions">
+          <a href="webapp.html" class="btn btn-primary">View project</a>
+        </div>
+      </div>
+      <div class="feature-visual">
+        <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="60" cy="60" r="10"/><circle cx="140" cy="50" r="14"/><circle cx="100" cy="110" r="18"/><circle cx="160" cy="130" r="10"/><circle cx="40" cy="130" r="12"/>
+          <path d="M20 170h160" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container text-center">
+    <h2>Let's work together</h2>
+    <p class="lede" style="margin:0 auto 1.5rem;">Open to research collaborations, spatial analysis projects, and conversations about cities, climate, and geospatial data.</p>
+    <a href="contact.html" class="btn btn-primary">Contact me</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">© 2026 Saghi Sarafi</p>
+    <ul class="footer-links">
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="webapp.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/saghi-sarafi-1b857b152" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/SaghiSarafi" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>

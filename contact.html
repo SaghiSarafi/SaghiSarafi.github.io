@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="myCSS_styleFiles/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Saghi Sarafi</title>
+<meta name="description" content="Get in touch with Saghi Sarafi — spatial data analyst and urban designer.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5b62'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <div id="header">
-        <h2>Saghi Sarafi</h2>
-    </div>
-    <div id="header2">
-        <h3>Spatial Data Analyst / Urban Designer</h3>
-    </div>
 
-    <br>
-    <br>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Saghi Sarafi</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="webapp.html">Projects</a></li>
+      <li><a href="personal.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-    <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="cv.html">Curriculum Vitae</a>
-        <a href="research.html">Research Interests</a>
-        <a href="personal.html">Personal Interests</a>
-        <a href="webapp.html">Web Map</a>
-        <a href="contact.html" class="active">Contact</a>
-    </div>
+<section class="hero page-hero" style="--hero-image: url('images/Iran.jpeg');">
+  <div class="container hero-inner">
+    <div class="role">Contact</div>
+    <h1>Let's connect</h1>
+    <p class="lede">Open to research collaborations, spatial analysis projects, and questions about my work.</p>
+  </div>
+</section>
 
-    <div id="contentinner">
-        <h2>Contact Saghi</h2>
+<section class="section-tight">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <h3>University email</h3>
+        <p style="margin-bottom:0;">For research and academic inquiries.</p>
+        <a href="mailto:saghi3@unm.edu" class="contact-value">saghi3@unm.edu</a>
+      </div>
+      <div class="contact-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <h3>Personal email</h3>
+        <p style="margin-bottom:0;">For everything else.</p>
+        <a href="mailto:saghi.sarafi@gmail.com" class="contact-value">saghi.sarafi@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 14a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>
+        <h3>Professional networks</h3>
+        <p style="margin-bottom:0.7rem;">Connect on LinkedIn or see my code on GitHub.</p>
+        <div class="stack-sm">
+          <a href="https://www.linkedin.com/in/saghi-sarafi-1b857b152" class="contact-value" target="_blank" rel="noopener">LinkedIn →</a><br>
+          <a href="https://github.com/SaghiSarafi" class="contact-value" target="_blank" rel="noopener">GitHub →</a>
+        </div>
+      </div>
     </div>
-    <div id="content">
-        <p>UNM Email: <a href="mailto:saghi3@unm.edu">saghi3@unm.edu</a></p>
-        <p>Personal Email: <a href="mailto:saghi.sarafi@gmail.com">saghi.sarafi@gmail.com</a></p>
-        <p>
-        <div class="social-icons mt-3"></div>
-        Connect with me on
-        <a href="https://www.linkedin.com/in/saghi-sarafi-1b857b152" class="social" target="_blank"
-            aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        &
-        <a href="https://github.com/SaghiSarafi" class="social" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        to stay in touch.
-        </p>
-    </div>
-    </div>
+  </div>
+</section>
 
-    <!-- Bootstrap 5 JavaScript Bundle -->
-    <script src="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Highlight the current page in the nav
-        const navLinks = document.querySelectorAll('#nav a');
-        const currentPage = window.location.pathname.split("/").pop();
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active');
-            }
-        });
-    </script>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">© 2026 Saghi Sarafi</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>

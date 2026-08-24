@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Interests</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="myCSS_styleFiles/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Interests — Saghi Sarafi</title>
+<meta name="description" content="Research interests of Saghi Sarafi: geospatial analysis, remote sensing, climate change, environmental monitoring, and urban sustainability.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5b62'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <div id="header">
-        <H2>Saghi Sarafi</H2>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Saghi Sarafi</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="webapp.html">Projects</a></li>
+      <li><a href="personal.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero page-hero" style="--hero-image: url('images/Iran.jpeg');">
+  <div class="container hero-inner">
+    <div class="role">Research Interests</div>
+    <h1>Where geography, data, and cities meet</h1>
+    <p class="lede">Five threads run through my work — from raw satellite pixels to the lived experience of urban heat.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="3"/><path d="M12 21c-4.5-4.2-7-7.6-7-11a7 7 0 0 1 14 0c0 3.4-2.5 6.8-7 11Z"/></svg>
+        <h3>Geospatial Analysis</h3>
+        <p>Exploring spatial patterns in environmental and urban data using GIS techniques and spatial statistics.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20 12 4l8 16"/><path d="M8 20l4-8 4 8"/></svg>
+        <h3>Remote Sensing</h3>
+        <p>Utilizing satellite imagery to monitor land cover changes, urban expansion, and environmental indicators.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="4"/></svg>
+        <h3>Climate Change</h3>
+        <p>Analyzing climate trends and urban heat islands to support sustainability and adaptation strategies.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c4 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 2-7 6-11Z"/></svg>
+        <h3>Environmental Monitoring</h3>
+        <p>Mapping and assessing ecological changes and ecosystem health using multi-source geospatial data.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg>
+        <h3>Urban Sustainability</h3>
+        <p>Designing resilient urban spaces through integrated planning, green infrastructure, and equity mapping.</p>
+      </div>
     </div>
-    <div id="header2">
-        <H3>Spatial Data Analyst / Urban Designer</H3>
-    </div>
-    <br>
-    <br>
+  </div>
+</section>
 
-    <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="cv.html">Curriculum Vitae</a>
-        <a href="research.html" class="active">Research Interests</a>
-        <a href="personal.html">Personal Interests</a>
-        <a href="webapp.html">Web Map</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div id="contentinner">
-        <h1>Saghi's Research Interests</h1>
-    </div>
-    <!-- <div id="content">
-        <p>My research focuses on geospatial analysis, remote sensing applications, climate change, environmental
-            monitoring, and urban sustainability.</p>
-    </div> -->
+<section class="bg-alt section-tight">
+  <div class="container text-center">
+    <h2>See this research in practice</h2>
+    <p class="lede" style="margin: 0 auto 1.5rem;">The NYC Tree Census Map applies several of these threads — remote sensing, environmental data, and urban planning — in one interactive tool.</p>
+    <a href="webapp.html" class="btn btn-primary">View the project</a>
+  </div>
+</section>
 
-    <div class="research-grid">
-        <div class="research-card">
-            <i class="fas fa-globe-americas"></i>
-            <h3>Geospatial Analysis</h3>
-            <p>Exploring spatial patterns in environmental and urban data using GIS techniques and spatial statistics.
-            </p>
-        </div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">© 2026 Saghi Sarafi</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
 
-        <div class="research-card">
-            <i class="fas fa-satellite"></i>
-            <h3>Remote Sensing</h3>
-            <p>Utilizing satellite imagery to monitor land cover changes, urban expansion, and environmental indicators.
-            </p>
-        </div>
-
-        <div class="research-card">
-            <i class="fas fa-temperature-high"></i>
-            <h3>Climate Change</h3>
-            <p>Analyzing climate trends and urban heat islands to support sustainability and adaptation strategies.</p>
-        </div>
-
-        <div class="research-card">
-            <i class="fas fa-tree"></i>
-            <h3>Environmental Monitoring</h3>
-            <p>Mapping and assessing ecological changes and ecosystem health using multi-source geospatial data.</p>
-        </div>
-
-        <div class="research-card">
-            <i class="fas fa-city"></i>
-            <h3>Urban Sustainability</h3>
-            <p>Designing resilient urban spaces through integrated planning, green infrastructure, and equity mapping.
-            </p>
-        </div>
-    </div>
-
-
-    <!-- Bootstrap 5 JavaScript Bundle -->
-    <script src="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Get all the navigation links
-        const navLinks = document.querySelectorAll('#nav a');
-
-        // Get the current page's filename
-        const currentPage = window.location.pathname.split("/").pop();
-
-        // Loop through each nav link
-        navLinks.forEach(link => {
-            // Check if the link's href matches the current page
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active'); // Add the active class
-            }
-        });
-    </script>
+<script src="js/main.js"></script>
 </body>
-
 </html>

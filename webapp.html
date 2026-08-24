@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Map</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="JS_CSS_downloaded_libraries/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="myCSS_styleFiles/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Saghi Sarafi</title>
+<meta name="description" content="NYC Tree Census Map: an interactive Leaflet.js and D3.js web app visualizing New York City's tree inventory, built by Saghi Sarafi and team.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5b62'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <div id="header">
-        <H2>Saghi Sarafi</H2>
-    </div>
-    <div id="header2">
-        <H3>Spatial Data Analyst / Urban Designer</H3>
-    </div>
-    <br>
-    <br>
 
-    <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="cv.html">Curriculum Vitae</a>
-        <a href="research.html">Research Interests</a>
-        <a href="personal.html">Personal Interests</a>
-        <a href="webapp.html" class="active">Web Map</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div id="contentinner">
-        <h1>NYC Tree Census Map</h1>
-    </div>
-    <div id="content">
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Saghi Sarafi</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="webapp.html" aria-current="page">Projects</a></li>
+      <li><a href="personal.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero page-hero" style="--hero-image: url('images/Iran.jpeg');">
+  <div class="container hero-inner">
+    <div class="role">Projects</div>
+    <h1>NYC Tree Census Map</h1>
+    <p class="lede">An interactive web app visualizing the distribution, species, and health of New York City's street trees.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:start; gap: 3rem;">
+      <div>
+        <span class="eyebrow">Final project — GEOG 585L</span>
+        <h2>Mapping NYC's urban forest</h2>
         <p>
-            This interactive web application is developed as the final project for GEOG 585L by our project team: Saghi,
-            Cameron, Carter, and Loc.
-            It visualizes New York City's Tree Census data, allowing users to explore the distribution, species, and
-            health of trees throughout the city.
-            The app is built using modern JavaScript libraries such as Leaflet.js and D3.js, and aims to support
-            environmental research and urban planning efforts.
+          Built as the final project for GEOG 585L with teammates Cameron, Carter,
+          and Loc, this app visualizes New York City's Tree Census data. It lets
+          users explore the distribution, species, and health of trees throughout
+          the city, supporting environmental research and urban planning
+          efforts.
         </p>
-
-        <p class="mt-4">
-            👉 <a href="WebApp/index.html" target="_blank"><strong>Visit My Web
-                    App</strong></a>
-        </p>
-
-        <p class="mt-2">
-            🎥 <a href="WebApp/demoVideo/TreeMapDemo.mp4" target="_blank">Watch a short video about the app</a>
-        </p>
+        <p>Built with <strong>Leaflet.js</strong> for interactive mapping and <strong>D3.js</strong> for data visualization.</p>
+        <div class="hero-actions" style="margin-top: 1.5rem;">
+          <a href="WebApp/index.html" class="btn btn-primary" target="_blank" rel="noopener">Launch the web app →</a>
+          <a href="WebApp/demoVideo/TreeMapDemo.mp4" class="btn btn-outline">Watch the demo video</a>
+        </div>
+      </div>
+      <div class="card" style="padding: 0; overflow: hidden;">
+        <video controls preload="none" style="width:100%; display:block; border-radius: var(--radius-md);">
+          <source src="WebApp/demoVideo/TreeMapDemo.mp4" type="video/mp4">
+          Your browser doesn't support embedded video —
+          <a href="WebApp/demoVideo/TreeMapDemo.mp4">watch it directly</a>.
+        </video>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- Bootstrap 5 JavaScript Bundle -->
-    <script src="JS_CSS_downloaded_libraries/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Get all the navigation links
-        const navLinks = document.querySelectorAll('#nav a');
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">© 2026 Saghi Sarafi</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
 
-        // Get the current page's filename
-        const currentPage = window.location.pathname.split("/").pop();
-
-        // Loop through each nav link
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active'); // Add the active class
-            }
-        });
-    </script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
