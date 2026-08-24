@@ -57,7 +57,7 @@ body {
   display: block;
   margin: 0 auto 20px auto;
   border: none;
-
+}
 /* ============================
      Container & Row Reset
   ============================ */
@@ -66,11 +66,6 @@ body {
   margin: 0 !important;
   padding-top: 0 !important;
   width: 100% !important;
-}
-
-.container {
-  padding: 0 !important;
-  max-width: 100% !important;
 }
 
 /* ============================
